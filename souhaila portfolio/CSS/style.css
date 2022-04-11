@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "bootstrap-icons";
+    src: url('../fonts/bootstrap-icons.woff'), url('../fonts/bootstrap-icons.woff2');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+/* * {
+    font-family: 'Send Flowers', cursive;
+} */
+
+body {
+    position: relative;
+}
+
+:root {
+    --primary: #ce6858;
+    --secondary: rgb(142, 84, 84);
+    --terciary: rgb(31, 28, 28);
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: bolder;
+    font-weight: 900;
+    margin-top: 20px;
+}
+
+a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.6s;
+    padding: 10px;
+}
+
+a:hover {
+    padding-left: 15px;
+    opacity: 1;
+    color: var(--primary);
+}
+
+.mode {
+    position: relative;
+    margin-top: 30px;
+}
+
+#toggle {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 40px;
+    width: 75px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#toggle:after {
+    content: "";
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    top: 5px;
+    left: 7px;
+    border-radius: 50%;
+}
+
+.dark-theme {
+    background-color: var(--secondary);
+    color: #e5e5e5;
+}
+
+.dark-theme #toggle {
+    background-color: #ffffff;
+}
+
+.dark-theme #toggle:after {
+    background-color: transparent;
+    box-shadow: 10px 10px var(--secondary);
+    top: -4px;
+    left: 30px;
+}
+
+.portfolio {
+    margin-left: 170px;
+    font-size: xx-large;
+}
+
+header.sticky {
+    position: sticky;
+    margin-top: 0px;
+    top: 0;
+    background-color: beige;
+}
+
+.press {
+    background-color: #ce6858;
+    padding: 27px;
+}
+
+.present {
+    color: white;
+    margin-top: 100px;
+    margin-right: 200px;
+    font-size: 2.1em;
+    font-family: 'Send Flowers', cursive;
+}
+
+.profil {
+    margin-top: -5vw;
+}
+
+.about {
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+
+.app {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.card {
+    border: solid var(--terciary);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    cursor: pointer;
+    padding-left: 22px;
+    padding-top: 22px;
+    width: 150px;
+    height: 150px;
+}
+
+.serv {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.card1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.projects {
+    background-color: var(--secondary);
+    padding: 95px;
+}
+
+.pro {
+    width: 150px;
+    height: 150px;
+}
+
+.card1 {
+    border: solid var(--terciary);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    cursor: pointer;
+    padding-left: 22px;
+    padding-top: 22px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+button {
+    background-color: rgb(230, 198, 198);
+    border-radius: 15px;
+    border: solid rgb(60, 59, 59);
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 400px;
+}
+
+.social {
+    padding: 50px;
+}
+
+i {
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.appvilla {
+    margin: 90px 0px 145px 120px;
+    width: 300px;
+    height: 300px;
+}
+
+
+/*partie contactez moi*/
+
+.contact {
+    padding: 80px;
+}
+
+input {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    position: relative;
+    animation-name: input;
+    animation-duration: 4s;
+    border-bottom: solid var(--terciary) !important;
+}
+
+::placeholder {
+    color: var(--terciary) !important;
+}
+
+textarea {
+    position: relative;
+    animation-name: textarea;
+    animation-duration: 4s;
+    border: solid var(--terciary) !important;
+}
+
+@keyframes textarea {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 950px;
+    }
+    55% {
+        transform: rotate(0deg);
+        left: 950px;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 950px;
+        background: rgb(238, 238, 193);
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+@keyframes input {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 950px;
+    }
+    55% {
+        transform: rotate(0deg);
+        left: 950px;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 950px;
+        background: rgb(238, 238, 193);
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+label {
+    color: var(--terciary);
+    font-size: larger;
+    font-weight: 600;
+}
+
+
+/* partie footer*/
+
+footer {
+    background-color: var(--primary);
+}
+
+.copy {
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .fronted {
+    background-color: var(--primary);
+    padding: 280px;
+    height: -1vw;
+    width: 550px;
+    margin-top: -2vw;
+    margin-bottom: 80px;
+} */
+
+
+/* 
+.card {
+    width: 2500px;
+    height: 300px;
+    border: var(--terciary) solid;
+} */
+
+
+/* :root {
+    --primary: #5bbbc8;
+    --secondary: #f3f997;
+    --terciary: #645e71;
+}
+
+img {
+    position: relative;
+    animation-name: img;
+    animation-duration: 4s;
+}
+
+
+/*partie header et animation logo*/
+
+
+/* @keyframes img {
+    0% {
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(20deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotate(0deg);
+        left: 950px;
+    }
+    55% {
+        transform: rotate(0deg);
+        left: 950px;
+    }
+    70% {
+        transform: rotate(0deg);
+        left: 950px;
+        background: #1ec7e6;
+    }
+    100% {
+        transform: rotate(-360deg);
+        left: 0px;
+    }
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+}
+
+.header {
+    background-color: rgb(91, 187, 200);
+}
+
+
+/*partie menu*/
+
+
+/* .profile {
+    position: fixed;
+}  */
